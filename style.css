@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width:350px;
+    margin: auto;
+
+    
+}
+
+
+.outer div {
+    border: 5px solid white;
+    height: 150px;
+    width: 150px;
+   border-radius: 15%;
+   margin: 5px;
+    
+}
+
+.outer div:hover {
+    border: 5px solid white;
+   box-shadow: 4px 4px 20px white;
+
+}
+
+.one {
+    background-color: rgb(238, 76, 103);
+}
+.two {
+    background-color: rgb(11, 248, 169);
+}
+.three {
+    background-color: rgb(240, 12, 233);
+}
+
+.four {
+    background-color: rgb(235, 139, 15);
+}
+
+#button {
+    margin-top: 30px;
+    border: 5px solid white;
+    background-color: brown;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 15%;
+    box-shadow: 10px grey;
+}
+
+#button:hover {
+    background-color: rgb(57, 3, 3);
+}
+
+.flash {
+    background-color: white;
+    box-shadow: 0 0 20px white;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
