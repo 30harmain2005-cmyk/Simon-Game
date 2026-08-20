@@ -67,10 +67,41 @@ body {
 }
 
 @media (max-width: 400px) {
+
     h1 {
-        font-size: 35px;
+        font-size: 30px;
+        margin-top: 20px;
     }
+
     h2 {
         font-size: 20px;
     }
+
+    .outer {
+        width: 290px;
+    }
+
+    .outer div {
+        width: 125px;
+        height: 125px;
+        margin: 4px;
+        border-width: 4px;
+    }
+
+    #button {
+        width: 110px;
+        height: 45px;
+        margin-top: 20px;
+    }
+
+    .highest,
+    .score {
+        font-size: 16px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
 }
+
+
