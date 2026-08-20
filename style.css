@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width:450px;
+    width:350px;
     margin: auto;
 
     
@@ -22,7 +22,7 @@ body {
     height: 150px;
     width: 150px;
    border-radius: 15%;
-   margin: 10px;
+   margin: 5px;
     
 }
 
@@ -72,8 +72,5 @@ body {
     }
     h2 {
         font-size: 20px;
-    }
-    .outer div {
-        margin: 5px;
     }
 }
