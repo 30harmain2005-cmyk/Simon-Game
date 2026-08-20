@@ -17,15 +17,16 @@ let message = document.querySelector(".message")
 button.addEventListener("click", function() {
     if(start === false) {
         start = true;
+        userClick = false;
         body.style.backgroundColor = "black";
         gameSeq = [];
         userSeq = [];
         level = 0;
-        p1.innerText = ""
+        p1.innerText = "";
         levelUp();
     }
     
-}, 1000);
+});
 
 function gameFlash() {
     message.textContent = "Watch the Sequence...";
@@ -39,12 +40,11 @@ function gameFlash() {
                 btn.classList.remove("flash");
             }, 250);
         }, i*1000);
-
-        setTimeout(() => {
-            userClick = true;
-            message.textContent = "Your Turn!"
-        }, (gameSeq.length-1) * 1000+250);
     }
+    setTimeout(() => {
+        userClick = true;
+        message.textContent = "Your Turn!"
+    }, (gameSeq.length-1) * 1000+250);
     
 }
 
@@ -88,6 +88,7 @@ function checkAns(idx) {
         }
         p2.innerText = `Highest Score: ${score}`;
         start = false;
+        userClick = false;
         message.textContent = "Game Over!"
         
     }
